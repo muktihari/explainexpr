@@ -43,7 +43,9 @@ func Evaluate() js.Func {
 			return encode(&Result{Err: fmt.Sprintf("%s", err)})
 		}
 
-		return encode(&Result{Value: v})
+		// complex128 and float's Inf can't be marshaled properly without using custom json.Marshaler.
+		// for this use case, treat it as a string should be sufficient.
+		return encode(&Result{Value: fmt.Sprintf("%v", v)})
 	})
 }
 
