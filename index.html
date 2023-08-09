@@ -1,116 +1,36 @@
 <html lang="en">
 <head>
-    <style>
-        body {
-            font-family: Helvetica, Arial, sans-serif;
-            background-color: #fff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }
-        
-        .container {
-            width: 90%;
-            max-width: 400px;
-            background-color: #fff;
-            border-radius: 8px;
-            padding: 20px;
-            box-sizing: border-box;
-            text-align: center;
-            overflow: auto;
-        }
-        
-        .header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        
-        .input-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        
-        .input-text {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            outline: none;
-            font-size: 16px;
-        }
-        
-        .input-button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        
-        .result {
-            padding: 20px;
-            background-color: #fafafa;
-            border-radius: 8px;
-            text-align: left;
-            font-family: Helvetica Neue;
-        }
-
-        .result > div {
-            display: inline;
-            padding-right: 10px;
-        }
-
-        .result div i {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-
-        .result hr {
-            margin-top: 25px;
-        }
-
-        .link {
-            font-size: 13px;
-        }
-
-        @media screen and (max-width: 600px) {
-            .container {
-            width: 100%;
-            }
-        }
-
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explain Expr</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<header>
+    <div class="header">
+        <img width="120px" src="https://raw.githubusercontent.com/muktihari/expr/master/icon.svg" alt="Logo">
+    </div>
+</header>
 <body>
     <div class="container">
-        <div class="header">
-            <img src="https://raw.githubusercontent.com/muktihari/expr/master/icon.svg" alt="Logo">
-          </div>
-        
         <div class="input-container">
           <input id="explain-input" type="text" class="input-text" id="textInput" placeholder="Enter math or boolean expression">
-          <button id="explain-button" class="input-button" id="submitButton">Explain</button>
+        </div>
+        <div class="input-container">
+            <button id="explain-button" class="btn btn-explain">Explain</button>
+            <button id="evaluate-button" class="btn btn-evaluate">=</button>
         </div>
         <div class="result" id="result">
         </div>
-        <br />
-        <div class="link">
-            <a href="https://github.com/muktihari/explainexpr" target="_blank">https://github.com/muktihari/explainexpr</a><br>
-        </div>
     </div>
 </body>
+<footer>
+    <a href="https://github.com/muktihari/expr" target="_blank">
+        <img src="github-icon.svg" height="10px" alt="GitHub Logo"> expr
+    </a>
+    <a href="https://github.com/muktihari/explainexpr" target="_blank">
+      <img src="github-icon.svg" height="10px" alt="GitHub Logo"> explainexpr
+    </a>
+  </footer>
 <script src="wasm_exec.js"></script>
 <script src="script.js"></script>
 </html>
