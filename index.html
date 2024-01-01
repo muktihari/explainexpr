@@ -1,36 +1,46 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explain Expr</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<header>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header>
     <div class="header">
-        <img width="120px" src="https://raw.githubusercontent.com/muktihari/expr/master/icon.svg" alt="Logo">
+      <img
+        width="100px"
+        src="https://raw.githubusercontent.com/muktihari/expr/master/icon.svg"
+        alt="Logo"
+      />
     </div>
-</header>
-<body>
+  </header>
+  <body>
     <div class="container">
-        <div class="input-container">
-          <input id="explain-input" type="text" class="input-text" id="textInput" placeholder="Enter math or boolean expression">
-        </div>
-        <div class="input-container">
-            <button id="explain-button" class="btn btn-explain">Explain</button>
-            <button id="evaluate-button" class="btn btn-evaluate">=</button>
-        </div>
-        <div class="result" id="result">
-        </div>
+      <div class="input-container">
+        <input
+          id="explain-input"
+          type="text"
+          class="input-text"
+          id="textInput"
+          placeholder="Enter math or boolean expression"
+        />
+      </div>
+      <div class="input-container">
+        <button id="explain-button" class="btn btn-explain">Explain</button>
+        <button id="evaluate-button" class="btn btn-evaluate">=</button>
+      </div>
+      <div class="result" id="result"></div>
+      <div class="footer">
+        <a href="https://github.com/muktihari/expr" target="_blank">
+          <img src="github-icon.svg" height="10px" alt="GitHub Logo" /> expr
+        </a>
+        <a href="https://github.com/muktihari/explainexpr" target="_blank">
+          <img src="github-icon.svg" height="10px" alt="GitHub Logo" />
+          explainexpr
+        </a>
+      </div>
     </div>
-</body>
-<footer>
-    <a href="https://github.com/muktihari/expr" target="_blank">
-        <img src="github-icon.svg" height="10px" alt="GitHub Logo"> expr
-    </a>
-    <a href="https://github.com/muktihari/explainexpr" target="_blank">
-      <img src="github-icon.svg" height="10px" alt="GitHub Logo"> explainexpr
-    </a>
-  </footer>
-<script src="wasm_exec.js"></script>
-<script src="script.js"></script>
+  </body>
+  <script src="wasm_exec.js"></script>
+  <script src="script.js"></script>
 </html>

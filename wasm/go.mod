@@ -1,4 +1,5 @@
-module wasm
+module explainexpr
 
 go 1.20
-require github.com/muktihari/expr v1.3.1 // indirect
+
+require github.com/muktihari/expr v1.4.1

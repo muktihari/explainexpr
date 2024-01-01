@@ -1,5 +1,4 @@
-github.com/google/go-cmp v0.5.9/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
-github.com/muktihari/expr v1.3.0 h1:ADOvDpSmSwus1cQmRN97zzZNKehobAEJ6q2Lc/pzIf8=
-github.com/muktihari/expr v1.3.0/go.mod h1:297LrBoneFUPfFrmpi2lmAsLcRLrFuMzt07dbrZdJCk=
-github.com/muktihari/expr v1.3.1 h1:A9YKjo2KvMrNQBfnD5lzUhonrlg5HGdR7ruDpdYPA30=
-github.com/muktihari/expr v1.3.1/go.mod h1:297LrBoneFUPfFrmpi2lmAsLcRLrFuMzt07dbrZdJCk=
+github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
+github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
+github.com/muktihari/expr v1.4.1 h1:yQCa9fG9w+9m1XXVtoGoRtbPrrdm6I5bcFw0ADEW1Fs=
+github.com/muktihari/expr v1.4.1/go.mod h1:qm6qnjKvElVwiV21UcrM+O3JuJlxN6PxORB0A4H67AM=
