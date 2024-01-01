@@ -30,6 +30,10 @@ WebAssembly.instantiateStreaming(fetch("main.wasm"), go.importObject).then(wasmM
 
     document.getElementById("evaluate-button").addEventListener("click", () => {
         let value = document.getElementById("explain-input").value
+        if(!value) {
+            document.getElementById("result").innerHTML = "input is empty"
+            return
+        }
         malloc(value)
 
         const res = parseResult(wasmModule.instance.exports.evaluate())
@@ -43,6 +47,10 @@ WebAssembly.instantiateStreaming(fetch("main.wasm"), go.importObject).then(wasmM
     
     document.getElementById("explain-button").addEventListener("click", () => {
         let value = document.getElementById("explain-input").value
+        if(!value) {
+            document.getElementById("result").innerHTML = "input is empty"
+            return
+        }
         malloc(value)
 
         const res = parseResult(wasmModule.instance.exports.explain())
